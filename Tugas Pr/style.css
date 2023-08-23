@@ -1,0 +1,64 @@
+.smkjp1{
+	color: blue;
+	font-weight: bold;
+}
+.smk1{
+	color: blue;
+	text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
+}
+.box1{
+	width: 1000px;
+	height:50px;
+	background: pink;
+}
+.box2{
+	width: 1000px;
+	height:50px;
+	background: skyblue;
+}
+.box3{
+	width: 1000px;
+	height: 50px;
+	background: green;
+}
+.title1{
+	color: red;
+    padding-top: 15px;
+}
+.title2{
+	color: blueviolet;
+	padding-top: 15px;
+}
+.title3{
+	color: lightgreen;
+	padding-top: 15px;
+}
+body{
+	font-family: 'Courier New' , Courier, monospace;
+}
+.st{
+	text-decoration: underline;
+}
+.lrm{
+	font-size: 15px;
+	line-height: 30px;
+}
+.cp{
+	text-align: center;
+	font-weight: bold;
+}
+.nm{
+	color: blue;
+	font-weight: bold;
+}
+.bl1{
+	color: pink;
+}
+.bl2{
+	color: skyblue;
+}
+.bl3{
+	color: green;
+}
