@@ -1,0 +1,91 @@
+.Awal{
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+}
+
+.Awal:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.home{
+    color: white;
+    background-color: blue;
+}
+
+.pesertadidik:active{
+    background-color: blue;
+}
+
+.contact:active{
+    background-color: blue;
+}
+
+.background{
+    background-image: url(smk\ jp\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 747px;
+    font-variant: small-caps;
+    color: white;
+    text-decoration: underline;
+}
+
+.h1:hover{
+    background-color: blue;
+}
+
+.pertama{
+    font-family: 'Courier New', Courier, monospace;
+    color: pink;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pertama:hover{
+    background-color: yellow;
+}
+
+.kedua{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.kedua:hover{
+    background-color: brown;
+}
+
+.ketiga{
+    color: palegreen;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.ketiga:hover{
+    background-color: salmon;
+}
+
+.nama{
+    color: yellow;
+}
+
+.last{
+    text-align: center;
+}
+
+.last:hover{
+    background-color: grey;
+    padding: 10px;
+}
