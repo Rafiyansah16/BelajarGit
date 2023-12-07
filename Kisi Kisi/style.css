@@ -1,0 +1,80 @@
+*{
+    font-family: 'Assistant', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.h1{
+    font-size: 76px;
+    font-weight: bolder;
+}
+
+.containerh1{
+    margin-top: 100px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+
+
+
+    font-weight: 700;
+}
+
+.container{
+    width: 70%;
+}
+
+.bg-cos{
+    background: url("tugas\ uprak.jpeg");
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+}
+
+.btn1{
+    
+    border: 2px solid #fe8b4a;
+    padding: 5px 40px;
+}
+
+.btn1:hover{
+    
+    border: 2px solid #fe8b4a;
+    padding: 5px 40px;
+}
+
+.btn2{
+    background-color: #fe8b4a;
+    color: white;
+    padding: 5px 40px;
+    border: 2px solid #fe8b4a;
+}
+
+.btn2:hover{
+    background: #fe8b4a;
+    border: 2px solid #fe8b4a;
+}
+
+.btn-3{
+    padding-right: 100px;
+    margin-right: 30px;
+}
+.btn-4{
+    
+    background-color: #fe8b4a;
+    color: white;
+    border: none;
+    padding: 0 57px;
+}
+.btn-4:hover{
+    
+    background-color: #fe8b4a;
+    color: white;
+    border: none;
+    padding: 0 57px;
+}
+
+body{
+    background-image: url(tugas\ uprak.jpeg);
+}
