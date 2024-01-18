@@ -1,21 +1,38 @@
 <?php
 
-function cek_ketersediaan_angkot($noAngkot) {
-    if ($noAngkot == 2 || $noAngkot == 9 || $noAngkot == 12 || $noAngkot == 17) {
-        return "sedang diperbaiki";
-    } elseif ($noAngkot == 10 || $noAngkot == 11) {
-        return "tersedia";
-    } elseif ($noAngkot >= 4 && $noAngkot <= 20) {
-        return "tidak tersedia";
-    } else {
-        return "tersedia";
+function hitungBiayaSPP($nama, $kelas, $kategori, $biayaSPP, $tunggakanBulan)
+{
+    $diskonPersen = ($kategori == "Beasiswa" && $tunggakanBulan < 6) ? 50 : 0;
+    $denda = ($tunggakanBulan >= 6) ? 100000 : 0;
+
+    $diskon = $biayaSPP * ($diskonPersen / 100);
+    $totalSPP = $biayaSPP * $tunggakanBulan - $diskon + $denda;
+    
+    $status = ($totalSPP > 0) ? "<span style='color: yellow;'>Belum Lunas</span>" : "<span style='color: green;'>Sudah Lunas (Hijau)</span>";
+    if ($tunggakanBulan >= 6) {
+        $status = "<span style='color: red;'>Menunggak Terlalu Lama</span>";
     }
+
+    echo "=== Program SPP Sederhana ===<br>";
+    echo "Nama Lengkap : $nama<br>";
+    echo "Kelas : $kelas<br>";
+    echo "Kategori : $kategori<br>";
+    echo "Biaya SPP : Rp $biayaSPP<br>";
+    echo "Tunggakan SPP : $tunggakanBulan bulan<br>";
+
+    if ($diskon > 0) {
+        echo "Discount $diskonPersen% : Rp $diskon<br>";
+    }
+    
+    if ($denda > 0) {
+        echo "Denda : Rp $denda<br>";
+    }
+
+    echo "Total yang harus dibayar : Rp $totalSPP<br>";
+    echo "Status : $status<br>";
 }
 
-echo "=== Program Angkot Sederhana ===\n";
-for ($no = 1; $no <= 20; $no++) {
-    $status = cek_ketersediaan_angkot($no);
-    echo "Angkot no - $no $status\n";
-}
+// Contoh pemanggilan fungsi
+hitungBiayaSPP("M. Rafiyansah", "X RPL 2", "Beasiswa", 700000, 3);
 
 ?>

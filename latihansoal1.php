@@ -1,16 +1,22 @@
 <?php
 
-echo "<h1>=== Program Biodata Sederhana Function ===</h1>";
-$namaLengkap = "nama : M.Rafiyansah <br />";
-$umur = "umur : 16 <br />";
-$kelas = "kelas : X RPL 2 <br />";
-$tempatTanggalLahir = "Tempat Tanggal Lahir : Jakarta, 9 Juni 2007 <br />";
-$noWa = "Nomor WhatsApp : 085798621070 <br />";
-$alamat = "Alamat : Jl. Sumedang Raya <br />";
-
-function namaLengkap(){
-    global $namaLengkap, $umur, $kelas, $tempatTanggalLahir, $noWa, $alamat;
-    echo $namaLengkap, $umur, $kelas, $tempatTanggalLahir, $noWa, $alamat;
+function lalulintas($noLampu, $kondisiTerminasi, $kt1, $kt2, $kt3, $kt4, $kt5, $kt6, $kt7, $kt8, $kt9, $kt10){
+    for($noLampu; $noLampu <= $kondisiTerminasi; $noLampu++){
+        if($noLampu == $kt3 || $noLampu == $kt5 || $noLampu == $kt7 || $noLampu == $kt8){
+            echo "Lampu lalu lintas no $noLampu tidak berfungsi <br/>";
+        } else if($noLampu == $kt1 || $noLampu == $kt2 || $noLampu == $kt4 || $noLampu == $kt6 || $noLampu == $kt10){
+            echo "Lampu lalu lintas no $noLampu tidak lancar <br/>";
+        } else if($noLampu == $kt9){
+            echo "Lampu lalu lintas no $noLampu sedang diperbaiki <br/>";
+        } else {
+            echo "Lampu lalu lintas no $noLampu lancar <br/> ";
+        }
+    }
 }
-echo namaLengkap();
+
+
+
+
+echo lalulintas(1, 20, 2, 4, 5, 10, 11, 12, 13, 14, 16, 18);
+
 ?>
